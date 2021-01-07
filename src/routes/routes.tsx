@@ -21,7 +21,7 @@ const userModule = [
       exact: true
     },
     component: lazy(() =>
-      import(/* webpackChunkName: "user" */ '@/pages/user/user')
+      import(/* webpackChunkName: "user" */ '@/pages/user')
     )
   }
 ];
