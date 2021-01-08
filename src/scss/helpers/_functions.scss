@@ -24,3 +24,12 @@
 @function link($url) {
   @return $url + '?__static_hash__';
 }
+
+/**
+* 拼接网络资源路径
+* @param $url 传入静态资源路径
+* @examp link('/assets/demo.png') => '/assets/demo.png?__static_hash__'
+*/
+@function network($url) {
+  @return 'http://154.212.112.143/static/images/' + $url + '.webp';
+}
