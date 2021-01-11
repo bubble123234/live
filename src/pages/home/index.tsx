@@ -4,6 +4,7 @@ import history from '@/utils/history';
 import style from './style.scss';
 import { staticAction } from '@/actions';
 import { RootState } from '@/reducers';
+import PublicHeader from '@/components/PublicHeader/PublicHeader';
 
 const Home: React.FC = () => {
   const dispatch = useDispatch();
@@ -24,10 +25,10 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     // 开启一个定时任务
-    time.current = setInterval(() => {
-      setCount(count + 1);
-      console.log(count);
-    }, 3000);
+    // time.current = setInterval(() => {
+    //   setCount(count + 1);
+    //   console.log(count);
+    // }, 3000);
 
     // 清除副作用
     return () => {
@@ -40,21 +41,13 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <p>我是首页</p>
-      <p>当前计数：{count}</p>
+    <div className={style.homeBox}>
+      <div className={style.PublicMain}>
+        <PublicHeader />
+      </div>
       <a onClick={goUser} className={style.btn}>
         跳去个人中心
       </a>
-      <div>
-        <img
-          src={
-            'https://static.0am08m.com//prod/banner/4ce4b82f28ca81ff3ff7bd7f97ffbc04202085d7.png'
-          }
-          width={1200}
-        />
-      </div>
-      <div className={style.bg}></div>
     </div>
   );
 };

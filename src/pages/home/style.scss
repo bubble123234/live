@@ -1,5 +1,10 @@
 @import '@/scss/helpers/_helpers.scss';
-
+.homeBox {
+  .PublicMain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 .btn {
   font-size: 20px;
   color: $color_black;

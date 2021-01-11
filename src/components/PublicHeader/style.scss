@@ -1,0 +1,91 @@
+.PublicHeader {
+  overflow: hidden;
+  padding: 44px 0 37px;
+  .leftHeader {
+    float: left;
+    .logoBox {
+      float: left;
+      cursor: pointer;
+      .imgLogo {
+        float: left;
+        display: block;
+        width: 63px;
+        height: 63px;
+        margin-right: 13px;
+      }
+      .logoWord {
+        float: left;
+        margin-top: 12px;
+        p {
+          font-size: 18px;
+          color: #003b51;
+        }
+        .firstWord {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .listBox {
+      float: left;
+      padding-top: 20px;
+      li {
+        float: left;
+        font-size: 12px;
+        color: #626260;
+        width: 38px;
+        line-height: 24px;
+        background: #fff;
+        box-shadow: 0 0 5px 0 #333332;
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 68px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .firstList {
+        background: #272723;
+        color: #fff;
+      }
+    }
+  }
+  .rightHeader {
+    float: right;
+    .searchBox {
+      float: left;
+      padding-top: 14px;
+      input {
+        float: left;
+        width: 115px;
+        background: #f6f5f0;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid #f4f4ef;
+      }
+      img {
+        float: left;
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .listBtn {
+      float: left;
+      padding-top: 22px;
+      li {
+        float: left;
+        margin-left: 20px;
+        cursor: pointer;
+        img {
+          float: left;
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          float: left;
+          font-size: 14px;
+          color: #626260;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
